@@ -1,0 +1,11 @@
+/api/getall : 	ritorna tutte le persone presenti a db
+
+/api/search:	ricerca le persone. richiesti due parametri (uri): 
+		- [field]   valori ammessi: name, surname
+		- [searchstring] stringa di ricerca
+
+/api/newperson:	aggiunta di una persona (json nel bodyrequest - vedi postman preset)  
+
+/api/delete/{id}:  rimuove dal db la persona (se presente) con id indicato (pathparam)
+
+/api/editperson: modifica i dati presenti a db. json completo anche di id (vedi postman preset)
