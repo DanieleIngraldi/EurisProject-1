@@ -1,0 +1,21 @@
+  <button class="add" title="add new person" (click)="showinsertrow()">New person</button>
+  <table>
+    <caption>Persons DB</caption>
+    <thead>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Fiscal Code</th>
+      <th>Birth Date</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of persons" (click)="edit(p)">
+        <td>{{p.id}}</td>
+        <td *ngIf="p!==editPerson">{{p.name}}</td><td *ngIf="p===editPerson"><input required [(ngModel)]="p.name" (blur)="updatePerson()" (keyup.enter)="updatePerson()" /></td>
+        <td *ngIf="p!==editPerson">{{p.surname}}</td><td *ngIf="p===editPerson"><input required [(ngModel)]="p.surname" (blur)="updatePerson()" (keyup.enter)="updatePerson()" /></td>
+        <td *ngIf="p!==editPerson">{{p.fiscalCode}}</td><td *ngIf="p===editPerson"><input required [(ngModel)]="p.fiscalCode" (blur)="updatePerson()" (keyup.enter)="updatePerson()" /></td>
+        <td *ngIf="p!==editPerson">{{p.birthDate}}</td><td *ngIf="p===editPerson"><input required type="date" required [(ngModel)]="p.birthDate" (blur)="updatePerson()" (keyup.enter)="updatePerson()" /></td>
+        <td><button class="delete" title="delete person" (click)="deletePerson(p)">x</button></td>
+      </tr>
+    </tbody>
+  </table>
