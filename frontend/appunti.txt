@@ -1,0 +1,2 @@
+CREAZIONE PROGETTO INIZIALE
+ng new euris --routing=true --style=css --skipGit=true
