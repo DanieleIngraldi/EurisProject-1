@@ -1,5 +1,5 @@
 INSERT INTO Module
-(id, Name, Surname, BirthDate, CreationTimestamp, Age, TYPE)
+(id, name, surname, birthDate, creationTimestamp, age, type)
 VALUES
 (1, 'Jason', 'Statham', 26-Jul-1967, 2019-09-02 16:57:47.361, 52 , 'C'),
 (2, 'Sylvester', 'Stallone', 6-Jul-1946, 2019-09-02 16:57:47.39, 73, 'O'),
