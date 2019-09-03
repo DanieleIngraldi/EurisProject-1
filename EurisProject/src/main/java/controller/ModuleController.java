@@ -1,6 +1,6 @@
 package controller;
 
-import model.Module;
+
 import exception.ModuleNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -53,7 +53,7 @@ public class ModuleController {
         if (!moduleOptional.isPresent())
             return ResponseEntity.notFound().build();
 
-        module.setId(id);
+        module.setId();
         moduleRepository.save(module);
 
         return ResponseEntity.noContent().build();
