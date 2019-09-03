@@ -1,4 +1,4 @@
-package com.example.EurisProject.domain;
+package model;
 
 enum Type {
     CHILD,

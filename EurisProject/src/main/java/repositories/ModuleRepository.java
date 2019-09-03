@@ -1,5 +1,6 @@
 package repositories;
 
+import model.Module;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
