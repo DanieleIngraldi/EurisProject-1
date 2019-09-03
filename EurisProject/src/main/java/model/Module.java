@@ -22,6 +22,7 @@ public class Module {
     private Date birthDate;
     private Timestamp creationTimestamp;
     private Integer Age;
+    private char type;
 
     private enum Type {
         CHILD,
@@ -29,7 +30,18 @@ public class Module {
         SPOUSE
     }
 
-
+    public Type getType(){
+        switch(type) {
+            case 'C':
+                return Type.CHILD;
+            case 'O':
+                return Type.OWNER;
+            case 'S':
+                return Type.SPOUSE;
+            default:
+                return null;
+        }
+    }
 }
 
 
