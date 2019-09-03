@@ -43,7 +43,7 @@ public class ModuleController {
         Module savedModule = moduleRepository.save(module);
 
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-                .buildAndExpand(savedModule.getId()).toUri();
+                .buildAndExpand(module.getId()).toUri();
         return ResponseEntity.created(location).build();
     }
 
