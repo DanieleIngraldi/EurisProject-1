@@ -1,6 +1,6 @@
-package Repositories;
+package com.example.EurisProject.repositories;
 
-import model.Module;
+import com.example.EurisProject.model.Module;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

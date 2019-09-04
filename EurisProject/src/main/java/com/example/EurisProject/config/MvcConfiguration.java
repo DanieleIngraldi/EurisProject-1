@@ -1,4 +1,4 @@
-package config;
+package com.example.EurisProject.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;

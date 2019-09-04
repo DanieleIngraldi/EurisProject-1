@@ -1,6 +1,6 @@
 package com.example.EurisProject;
 
-import model.Module;
+import com.example.EurisProject.model.Module;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

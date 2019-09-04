@@ -1,4 +1,4 @@
-package exception;
+package com.example.EurisProject.exception;
 
 public class ModuleNotFoundException extends RuntimeException {
 

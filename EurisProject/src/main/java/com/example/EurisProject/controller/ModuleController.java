@@ -1,12 +1,12 @@
-package controller;
+package com.example.EurisProject.controller;
 
-import model.Module;
-import exception.ModuleNotFoundException;
+import com.example.EurisProject.model.Module;
+import com.example.EurisProject.exception.ModuleNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import Repositories.ModuleRepository;
+import com.example.EurisProject.repositories.ModuleRepository;
 
 import java.net.URI;
 import java.util.List;
