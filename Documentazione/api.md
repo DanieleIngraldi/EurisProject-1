@@ -1,7 +1,7 @@
 # API Documentation
 
 ## retrieveAllModules
-- returns all entities as a List
+returns all entities as a List
 #### Url
 - /api/modules
 #### Method
@@ -9,7 +9,7 @@
 #### Data Params
 - none
 ## retrieveModuleById
-- returns the entity with the specified ID
+returns the entity with the specified ID
 #### Url
 - /api/modules/{id}
 #### Method
@@ -18,7 +18,7 @@
 - @PathVariable long id
 
 ## deleteModuleById
-- delete the entity with the specified ID
+delete the entity with the specified ID
 ### Url
 - /api/modules/{id}
 ### Method
@@ -27,7 +27,7 @@
 - @PathVariable long id
 
 ## createModule
-- returns a new ResponseEntity<Module\>
+returns a new ResponseEntity<Module\>
 ### Url
 - /api/modules
 ### Method
@@ -36,7 +36,7 @@
 - @RequestBody Module module
 
 ## updateModule
-- returns an updated ResponseEntity<Module\>, updating the entity with the specified ID
+returns an updated ResponseEntity<Module\>, updating the entity with the specified ID
 ### Url
 - /api/modules/{id}
 ### Method
