@@ -53,7 +53,7 @@ public class ModuleController {
         if (!moduleOptional.isPresent())
             return ResponseEntity.notFound().build();
 
-        module.setId(id);
+        module.setId();
         moduleRepository.save(module);
 
         return ResponseEntity.noContent().build();
